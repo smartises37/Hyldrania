@@ -1,0 +1,27 @@
+body {
+    /* Dégradé horyzontal*/
+    background: linear-gradient(to right,rgb(209, 209, 3),rgb(229, 4, 4));
+
+
+    /* Supprime les marges par défaut pour que le fond couvre toute la page */
+    margin: 0;
+    height: 100vh; /* 100% de la hauteur de la fenêtre */
+    font-family: Arial, sans-serif;
+}
+
+h1{
+    font-family: Arial, Helvetica, sans-serif; 
+    font-size: 3em;
+    text-align: center;
+}
+.El_maloque {
+  font-weight: bold;
+  background: linear-gradient(90deg, red, rgb(0, 72, 255), yellow, green, blue, indigo, violet);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  display: inline-block;
+}
+.border{
+  border: 15px; ;
+}
