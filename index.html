@@ -28,14 +28,39 @@
             position: relative;
             left: -15px; /* Compense la bordure des autres images */
         }
+
+        /* ✅ Centrer la liste des liens au milieu de la page */
+        #haut_de_la_page {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            text-align: center;
+        }
+
+        #haut_de_la_page li {
+            margin: 10px 0;
+        }
+
+        #haut_de_la_page a {
+            text-decoration: none;
+            color: black;
+            font-weight: bold;
+            font-size: 1.2em;
+        }
+
+        #haut_de_la_page a:hover {
+            color: #0078d7;
+        }
     </style>
 </head>
 
 <body>
 
     <img src="https://i.postimg.cc/XJfqfS6G/hyldrania.jpg" alt="Hyldrania" title="Hyldrania" class="full-width-image"/>
-
-
 
     <u><h1>Hyldrania : serveur communautaire.</h1></u>
 
@@ -76,24 +101,16 @@
   </iframe>
 </div>
 
-   <ul id="haut_de_la_page" style="
-    list-style-type: none;
-    padding: 0;
-    margin: 0;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    text-align: center;
-">
-    <a href="#Puissance_4"><li><strong>Puissance 4</strong></li></a>
-    <a href="#Les_pilliers"><li><strong>Les pilliers</strong></li></a>
-    <a href="#Vagues_de_mobs"><li><strong>Vagues de mobs</strong></li></a>
-    <a href="#Qui_es_ce"><li><strong>Qui est-ce ?</strong></li></a>
-    <a href="#Quelques_quiz"><li><strong>Quelques quiz</strong></li></a>
-    <a href="#Deux_labirynthe"><li><strong>Deux labyrinthes</strong></li></a>
-    <a href="#la_map"><li><strong>Plan du spawn</strong></li></a>
-</ul>
+   <!-- ✅ Menu centré -->
+   <ul id="haut_de_la_page">
+        <li><a href="#Puissance_4"><strong>Puissance 4</strong></a></li>
+        <li><a href="#Les_pilliers"><strong>Les pilliers</strong></a></li>
+        <li><a href="#Vagues_de_mobs"><strong>Vagues de mobs</strong></a></li>
+        <li><a href="#Qui_es_ce"><strong>Qui est-ce ?</strong></a></li>
+        <li><a href="#Quelques_quiz"><strong>Quelques quiz</strong></a></li>
+        <li><a href="#Deux_labirynthe"><strong>Deux labyrinthes</strong></a></li>
+        <li><a href="#la_map"><strong>Plan du spawn</strong></a></li>
+    </ul>
 
     <p>
         <strong>Il y a aussi plusieurs easter eggs à vous de les trouver !<br>
@@ -152,10 +169,6 @@
   <p class="easter-egg-message">Bravo tu as trouvé un easter eggs</p>
   <img src="https://i.postimg.cc/5yjFhNZ3/map-5.png" alt="Plan du spawn" />
 </div>
-
-
-
-
 
 </body>
 </html>
