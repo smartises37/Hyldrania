@@ -26,18 +26,14 @@
             padding-left: 0;
             margin: 0;
             position: relative;
-            left: -15px; /* Compense la bordure des autres images */
+            left: -15px;
         }
 
-        /* ✅ Centrer la liste des liens au milieu de la page */
+        /* ✅ Liste des liens sous "Infos", centrée horizontalement */
         #haut_de_la_page {
             list-style-type: none;
             padding: 0;
-            margin: 0;
-            position: absolute;
-            top: 50%;
-            left: 50%;
-            transform: translate(-50%, -50%);
+            margin: 20px auto;
             text-align: center;
         }
 
@@ -70,7 +66,6 @@
     <h2>Première sortie du serv (test) : deuxième semaine des vacances.</h2>
     <h2>Créé par : nitram.</h2>
 
-    <!--  Lien Discord corrigé -->
     <h2>
         <a href="https://discord.gg/KMV4wgKXz" target="_blank" rel="noopener noreferrer">
             Rejoindre notre serveur Discord
@@ -82,27 +77,17 @@
         Administrateurs du serveur : nitram, El_maloque
     </h2>
 
-<div class="tooltip">
-  <img src="https://i.postimg.cc/Z5Z1BXxg/html-hfufhffjfhfh.png" alt="Image présentation" class="second-image" />
-  <span class="tooltiptext">Image de présentation</span>
-</div>
-
+    <div class="tooltip">
+      <img src="https://i.postimg.cc/Z5Z1BXxg/html-hfufhffjfhfh.png" alt="Image présentation" class="second-image" />
+      <span class="tooltiptext">Image de présentation</span>
+    </div>
 
     <h1>Infos :</h1>
 
     <h2>Il y a plusieurs mini-jeux présents sur le serveur :</h2>
-    <div class="video-container">
-  <iframe src="https://player.vimeo.com/video/1127996562?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479"
-          frameborder="0"
-          allow="autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media; web-share"
-          referrerpolicy="strict-origin-when-cross-origin"
-          allowfullscreen
-          title="lv_0_20251016164550">
-  </iframe>
-</div>
 
-   <!-- ✅ Menu centré -->
-   <ul id="haut_de_la_page">
+    <!-- ✅ Liens déplacés ici sous "Infos" -->
+    <ul id="haut_de_la_page">
         <li><a href="#Puissance_4"><strong>Puissance 4</strong></a></li>
         <li><a href="#Les_pilliers"><strong>Les pilliers</strong></a></li>
         <li><a href="#Vagues_de_mobs"><strong>Vagues de mobs</strong></a></li>
@@ -111,6 +96,16 @@
         <li><a href="#Deux_labirynthe"><strong>Deux labyrinthes</strong></a></li>
         <li><a href="#la_map"><strong>Plan du spawn</strong></a></li>
     </ul>
+
+    <div class="video-container">
+      <iframe src="https://player.vimeo.com/video/1127996562?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479"
+              frameborder="0"
+              allow="autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media; web-share"
+              referrerpolicy="strict-origin-when-cross-origin"
+              allowfullscreen
+              title="lv_0_20251016164550">
+      </iframe>
+    </div>
 
     <p>
         <strong>Il y a aussi plusieurs easter eggs à vous de les trouver !<br>
@@ -173,3 +168,6 @@
 </body>
 </html>
 
+
+        
+    
