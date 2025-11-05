@@ -10,18 +10,16 @@
             margin: 0;
             padding: 0;
             font-family: Arial, sans-serif;
-            text-align: center; /* ✅ Centre tout le texte */
+            text-align: center;
         }
 
-        /* ✅ Toutes les images sauf la bannière ont une bordure à gauche */
         img {
             border-left: 15px solid black;
             padding-left: 5px;
             display: block;
-            margin: 20px auto; /* ✅ Centre les images */
+            margin: 20px auto;
         }
 
-        /* ❌ Bannière sans bordure et 100% largeur écran */
         .full-width-image {
             width: 100vw;
             height: auto;
@@ -32,7 +30,6 @@
             left: -15px;
         }
 
-        /* ✅ Liste des liens */
         #haut_de_la_page {
             list-style-type: none;
             padding: 0;
@@ -55,13 +52,12 @@
             color: #0078d7;
         }
 
-        /* ✅ Partie centrée verticalement (sans fond) */
         .centered-section {
             display: flex;
             flex-direction: column;
             align-items: center;
             justify-content: center;
-            height: 100vh; /* prend toute la hauteur de la fenêtre */
+            height: 100vh;
         }
 
         .video-container {
@@ -86,7 +82,6 @@
             color: green;
         }
 
-        /* ✅ Info-bulle (tooltip) sur le lien du deuxième site */
         .tooltip-link {
             position: relative;
             display: inline-block;
@@ -102,7 +97,7 @@
             padding: 8px;
             position: absolute;
             z-index: 1;
-            bottom: 125%; /* au-dessus du lien */
+            bottom: 125%;
             left: 50%;
             margin-left: -110px;
             opacity: 0;
@@ -113,6 +108,19 @@
             visibility: visible;
             opacity: 1;
         }
+
+        /* ✅ Texte justifié au centre de la page */
+        .text-justifie {
+            text-align: justify;
+            max-width: 900px;
+            margin: 0 auto;
+            line-height: 1.6;
+        }
+
+        .text-justifie h1,
+        .text-justifie h2 {
+            text-align: center;
+        }
     </style>
 </head>
 
@@ -120,33 +128,34 @@
 
     <img src="https://i.postimg.cc/XJfqfS6G/hyldrania.jpg" alt="Hyldrania" title="Hyldrania" class="full-width-image"/>
 
-    <u><h1>Hyldrania : serveur communautaire.</h1></u>
-    <i><h2>IP : Freyland.ouimc.eu</h2></i>
-    <h2>Version actuelle du serveur : 1.21.9</h2>
-    <h2>Version Java et crack acceptés.</h2>
-    <h2>Première sortie du serv (test) : deuxième semaine des vacances.</h2>
-    <h2>Créé par : nitram.</h2>
+    <div class="text-justifie">
+        <u><h1>Hyldrania : serveur communautaire.</h1></u>
+        <i><h2>IP : Freyland.ouimc.eu</h2></i>
+        <h2>Version actuelle du serveur : 1.21.9</h2>
+        <h2>Version Java et crack acceptés.</h2>
+        <h2>Première sortie du serv (test) : deuxième semaine des vacances.</h2>
+        <h2>Créé par : nitram.</h2>
 
-    <h2>
-        <a href="https://discord.gg/KMV4wgKXz" target="_blank" rel="noopener noreferrer">
-            Rejoindre notre serveur Discord
-        </a>
-    </h2>
+        <h2>
+            <a href="https://discord.gg/KMV4wgKXz" target="_blank" rel="noopener noreferrer">
+                Rejoindre notre serveur Discord
+            </a>
+        </h2>
 
-    <h2>
-        Réalisation des builds : <span class="El_maloque">El_maloque</span><br>
-        Administrateurs du serveur : nitram, El_maloque
-    </h2>
+        <h2>
+            Réalisation des builds : <span class="El_maloque">El_maloque</span><br>
+            Administrateurs du serveur : nitram, El_maloque
+        </h2>
 
-    <div class="tooltip">
-        <img src="https://i.postimg.cc/Z5Z1BXxg/html-hfufhffjfhfh.png" alt="Image présentation" class="second-image" />
-        <span class="tooltiptext">Image de présentation</span>
+        <div class="tooltip">
+            <img src="https://i.postimg.cc/Z5Z1BXxg/html-hfufhffjfhfh.png" alt="Image présentation" class="second-image" />
+            <span class="tooltiptext">Image de présentation</span>
+        </div>
+
+        <h1>Infos :</h1>
+        <h2>Il y a plusieurs mini-jeux présents sur le serveur :</h2>
     </div>
 
-    <h1>Infos :</h1>
-    <h2>Il y a plusieurs mini-jeux présents sur le serveur :</h2>
-
-    <!-- ✅ Partie centrée verticalement sans fond -->
     <div class="centered-section">
         <ul id="haut_de_la_page">
             <li><a href="#Puissance_4"><strong>Puissance 4</strong></a></li>
@@ -157,7 +166,6 @@
             <li><a href="#Deux_labirynthe"><strong>Deux labyrinthes</strong></a></li>
             <li><a href="#la_map"><strong>Plan du spawn</strong></a></li>
             <li>
-                <!-- ✅ Lien avec infobulle -->
                 <div class="tooltip-link">
                     <a href="https://html2-5g1y.vercel.app/" target="_blank"><strong>Lien vers mon deuxième site</strong></a>
                     <span class="tooltiptext">Clique ici pour visiter mon autre site web ! 🌐</span>
@@ -174,67 +182,64 @@
                 title="lv_0_20251016164550"></iframe>
     </div>
 
-    <p>
-        <strong>Il y a aussi plusieurs easter eggs à vous de les trouver !<br>
-        Ils sont cachés dans le spawn.</strong>
-    </p>
+    <div class="text-justifie">
+        <p><strong>Il y a aussi plusieurs easter eggs à vous de les trouver !<br>
+        Ils sont cachés dans le spawn.</strong></p>
 
-    <h2><strong id="Puissance_4">Puissance 4 :</strong></h2>
-    <img src="https://i.postimg.cc/x1RBKgsM/html-1000000000000000.png" alt="Puissance 4" />
-    <p>
-        <strong>Deux joueurs max :</strong> un joueur de chaque côté.<br>
-        <strong>Pour les blocs :</strong> il y a deux coffres, l’un donne des blocs rouges, l’autre des blocs jaunes.<br>
-        <strong>Règle :</strong> Le premier à aligner 4 blocs gagne.<br>
-        Du côté des rouges, un bouton permet de réinitialiser le plateau.
-    </p>
-    <a href="#haut_de_la_page">Haut de la page</a>
+        <h2><strong id="Puissance_4">Puissance 4 :</strong></h2>
+        <img src="https://i.postimg.cc/x1RBKgsM/html-1000000000000000.png" alt="Puissance 4" />
+        <p>
+            <strong>Deux joueurs max :</strong> un joueur de chaque côté.<br>
+            <strong>Pour les blocs :</strong> il y a deux coffres, l’un donne des blocs rouges, l’autre des blocs jaunes.<br>
+            <strong>Règle :</strong> Le premier à aligner 4 blocs gagne.<br>
+            Du côté des rouges, un bouton permet de réinitialiser le plateau.
+        </p>
+        <a href="#haut_de_la_page">Haut de la page</a>
 
-    <h2><strong id="Les_pilliers">Les piliers :</strong></h2>
-    <img src="https://i.postimg.cc/ZKkkZWBN/html-6456445444.png" alt="Les piliers" /><br>
-    <p>
-        Principe du jeu : Vous êtes sur un pilier et recevez un objet toutes les 8 secondes.<br>
-        Utilisez-les intelligemment pour faire tomber vos adversaires !<br><br>
-        Règles : Le dernier en vie gagne. MLG non autorisé. Tant que vous ne touchez pas le sol, c’est bon.
-    </p>
-    <a href="#haut_de_la_page">Haut de la page</a>
+        <h2><strong id="Les_pilliers">Les piliers :</strong></h2>
+        <img src="https://i.postimg.cc/ZKkkZWBN/html-6456445444.png" alt="Les piliers" /><br>
+        <p>
+            Principe du jeu : Vous êtes sur un pilier et recevez un objet toutes les 8 secondes.<br>
+            Utilisez-les intelligemment pour faire tomber vos adversaires !<br><br>
+            Règles : Le dernier en vie gagne. MLG non autorisé. Tant que vous ne touchez pas le sol, c’est bon.
+        </p>
+        <a href="#haut_de_la_page">Haut de la page</a>
 
-    <h2><strong id="Vagues_de_mobs">Vagues de mobs :</strong></h2>
-    <img src="https://i.postimg.cc/HLQPrhDT/image-2025-10-14-200519291.png" alt="Vague de mobs" />
-    <p><strong>Affrontez des vagues successives d’ennemis dans un labyrinthe !</strong><br>
-    Vous aurez à disposition une armure en métal ainsi qu’une épée en métal.</p>
-    <a href="#haut_de_la_page">Haut de la page</a>
+        <h2><strong id="Vagues_de_mobs">Vagues de mobs :</strong></h2>
+        <img src="https://i.postimg.cc/HLQPrhDT/image-2025-10-14-200519291.png" alt="Vague de mobs" />
+        <p><strong>Affrontez des vagues successives d’ennemis dans un labyrinthe !</strong><br>
+        Vous aurez à disposition une armure en métal ainsi qu’une épée en métal.</p>
+        <a href="#haut_de_la_page">Haut de la page</a>
 
-    <h2><strong id="Qui_es_ce">Qui est-ce ? :</strong></h2>
-    <img src="https://i.postimg.cc/HsbqLTXt/html6841.png" alt="Qui est-ce" /><br>
-    <p>
-        C’est un “Qui est-ce ?” version Minecraft !<br>
-        Choisissez un mob et posez des questions pour deviner celui de votre adversaire.<br>
-        Abaissez les pistons au-dessus des têtes des mobs éliminés.
-    </p>
-    <a href="#haut_de_la_page">Haut de la page</a>
+        <h2><strong id="Qui_es_ce">Qui est-ce ? :</strong></h2>
+        <img src="https://i.postimg.cc/HsbqLTXt/html6841.png" alt="Qui est-ce" /><br>
+        <p>
+            C’est un “Qui est-ce ?” version Minecraft !<br>
+            Choisissez un mob et posez des questions pour deviner celui de votre adversaire.<br>
+            Abaissez les pistons au-dessus des têtes des mobs éliminés.
+        </p>
+        <a href="#haut_de_la_page">Haut de la page</a>
 
-    <h2><strong id="Quelques_quiz">Quelques quiz :</strong></h2>
-    <img src="https://i.postimg.cc/VLXxNznb/html-plus-d-inspi.png" alt="Quiz" /><br>
-    <p>
-        Petits quiz sympathiques : plusieurs niveaux de difficulté avec des questions sur le serveur.
-    </p>
-    <a href="#haut_de_la_page">Haut de la page</a>
+        <h2><strong id="Quelques_quiz">Quelques quiz :</strong></h2>
+        <img src="https://i.postimg.cc/VLXxNznb/html-plus-d-inspi.png" alt="Quiz" /><br>
+        <p>
+            Petits quiz sympathiques : plusieurs niveaux de difficulté avec des questions sur le serveur.
+        </p>
+        <a href="#haut_de_la_page">Haut de la page</a>
 
-    <h2><strong id="Deux_labirynthe">Deux labyrinthes :</strong></h2>
-    <img src="https://i.postimg.cc/rpZbHs2y/html-5.png" alt="Labyrinthes" /><br>
-    <p>Deux labyrinthes à parcourir, le but est simple : trouver la sortie !</p>
-    <a href="#haut_de_la_page">Haut de la page</a>
+        <h2><strong id="Deux_labirynthe">Deux labyrinthes :</strong></h2>
+        <img src="https://i.postimg.cc/rpZbHs2y/html-5.png" alt="Labyrinthes" /><br>
+        <p>Deux labyrinthes à parcourir, le but est simple : trouver la sortie !</p>
+        <a href="#haut_de_la_page">Haut de la page</a>
 
-    <h2><p id="la_map">Plan du spawn :</p></h2>
+        <h2><p id="la_map">Plan du spawn :</p></h2>
 
-    <div class="easter-egg-container">
-        <p class="easter-egg-message">Bravo, tu as trouvé un easter egg !</p>
-        <img src="https://i.postimg.cc/5yjFhNZ3/map-5.png" alt="Plan du spawn" />
+        <div class="easter-egg-container">
+            <p class="easter-egg-message">Bravo, tu as trouvé un easter egg !</p>
+            <img src="https://i.postimg.cc/5yjFhNZ3/map-5.png" alt="Plan du spawn" />
+        </div>
     </div>
 
 </body>
 </html>
 
-
-
-       
