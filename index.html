@@ -10,6 +10,7 @@
             margin: 0;
             padding: 0;
             font-family: Arial, sans-serif;
+            text-align: center; /* ✅ Centre tout le texte */
         }
 
         /* ✅ Toutes les images sauf la bannière ont une bordure à gauche */
@@ -17,6 +18,7 @@
             border-left: 15px solid black;
             padding-left: 5px;
             display: block;
+            margin: 20px auto; /* ✅ Centre les images */
         }
 
         /* ❌ Bannière sans bordure et 100% largeur écran */
@@ -34,7 +36,7 @@
         #haut_de_la_page {
             list-style-type: none;
             padding: 0;
-            margin: 0;
+            margin: 0 auto;
             text-align: center;
         }
 
@@ -83,6 +85,34 @@
             font-weight: bold;
             color: green;
         }
+
+        /* ✅ Info-bulle (tooltip) sur le lien du deuxième site */
+        .tooltip-link {
+            position: relative;
+            display: inline-block;
+        }
+
+        .tooltip-link .tooltiptext {
+            visibility: hidden;
+            width: 220px;
+            background-color: black;
+            color: #fff;
+            text-align: center;
+            border-radius: 5px;
+            padding: 8px;
+            position: absolute;
+            z-index: 1;
+            bottom: 125%; /* au-dessus du lien */
+            left: 50%;
+            margin-left: -110px;
+            opacity: 0;
+            transition: opacity 0.3s;
+        }
+
+        .tooltip-link:hover .tooltiptext {
+            visibility: visible;
+            opacity: 1;
+        }
     </style>
 </head>
 
@@ -126,7 +156,13 @@
             <li><a href="#Quelques_quiz"><strong>Quelques quiz</strong></a></li>
             <li><a href="#Deux_labirynthe"><strong>Deux labyrinthes</strong></a></li>
             <li><a href="#la_map"><strong>Plan du spawn</strong></a></li>
-            <li><a href="https://html2-5g1y.vercel.app/" target="_blank"><strong>Lien vers mon deuxième site</strong></a></li>
+            <li>
+                <!-- ✅ Lien avec infobulle -->
+                <div class="tooltip-link">
+                    <a href="https://html2-5g1y.vercel.app/" target="_blank"><strong>Lien vers mon deuxième site</strong></a>
+                    <span class="tooltiptext">Clique ici pour visiter mon autre site web ! 🌐</span>
+                </div>
+            </li>
         </ul>
     </div>
 
@@ -198,6 +234,7 @@
 
 </body>
 </html>
+
 
 
        
